@@ -4,9 +4,11 @@ package Play;
 import General.PlacementShips;
 import PlayerOne.FileWriterOnePlayer;
 import PlayerOne.NamePlayersOne;
+import PlayerTwo.FileWriterTwoPlayer;
 import PlayerTwo.NamePlayersTwo;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 public class Main {
     private final int FILED_LENGTH = 10;
@@ -16,29 +18,30 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException {
-        // One player enter name
+        PrintWriter pw = new PrintWriter(System.out, true);
+        // One player enter name end writer in files
         NamePlayersOne namePlayerOne = new NamePlayersOne();
-        System.out.println(namePlayerOne.stringEnterOneName()); // "Player One enter name:"
-        FileWriterOnePlayer fileWriterOnePlayer = new FileWriterOnePlayer();
-        //fileWriterOnePlayer.playerOneEnterName(); // writer "Player One enter name:" in file FileOnePlayer.txt
+        pw.printf(namePlayerOne.stringEnterOneName()); // output string "Player One enter name:"
         String name_playerOne = namePlayerOne.namePlayerOne(); // Enter name one player
-        fileWriterOnePlayer.playerOneEnterName(name_playerOne);
+        FileWriterOnePlayer fileWriterOnePlayer = new FileWriterOnePlayer();
+        fileWriterOnePlayer.playerOneEnterName(name_playerOne); // writer name one player in file
+        pw.println("Player " + name_playerOne + " welcome in game.");
 
+        pw.println("------------------------------");
 
-        // Two player enter name
+        // Two player enter name end writer in files
         NamePlayersTwo nameplayersTwo = new NamePlayersTwo();
-        nameplayersTwo.stringEnterTwoName(); //"Player Two enter name:"
-        nameplayersTwo.namePlayerTwo(); // Enter name two player
+        pw.printf(nameplayersTwo.stringEnterName()); // output string "Player Two enter name:"
+        String name_playerTwo = nameplayersTwo.namePlayerTwo(); // Enter name two player
+        FileWriterTwoPlayer fileWriterTwoPlayer = new FileWriterTwoPlayer();
+        fileWriterTwoPlayer.playerTwoEnterName(name_playerTwo);
+        pw.println("Player " + name_playerTwo + " welcome in game.");
 
-        // Welcome players
-
-       // String playerTwo = playersTwo.namePlayerTwo();// name two player
-        //System.out.println("Hello player: " + playerTwo);
-        System.out.println();
-
-        System.out.println("-------------------------");
-        System.out.println("Welcome to the sea battle game!");
-        System.out.println("-------------------------");
+        // Game start!
+        pw.println();
+        pw.println("-------------------------");
+        pw.println("Game start!");
+        pw.println("-------------------------");
 
         /*
         System.out.println("Player " + namePlayerOne + " open file \"FileOnePlayer.txt\" end enter data.");

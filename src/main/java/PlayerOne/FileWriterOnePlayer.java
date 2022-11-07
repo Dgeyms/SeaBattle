@@ -12,14 +12,13 @@ public class FileWriterOnePlayer {
 
 
     public FileWriterOnePlayer() throws IOException {
-        // fileWriter.write("Ты будешь записывать");
 
     }
 
     // Writer "Player One enter name:"
     public void playerOneEnterName(String name_playerOne) throws IOException {
         fileWriter.write("Player One enter name: ");
-        fileWriter.write(name_playerOne);
+        fileWriter.write(name_playerOne); // writer name in files
         fileWriter.close();
     }
 

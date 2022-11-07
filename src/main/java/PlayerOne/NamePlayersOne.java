@@ -12,6 +12,7 @@ public class NamePlayersOne {
         String stEnterOneName = "Player One enter name: ";
         return stEnterOneName;
     }
+    // Enter name player One
     public String namePlayerOne(){
         String name_playerOne = scan.next();
         return name_playerOne;
