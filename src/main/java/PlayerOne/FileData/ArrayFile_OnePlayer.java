@@ -10,7 +10,7 @@ public class ArrayFile_OnePlayer {
 
     public String[] openFileOnePlayer() throws IOException {
         String[] arrayFileDataOnePlayer = new String[12];
-        FileReader fileDataOnePlayer = new FileReader("FileOnePlayer.txt");
+        FileReader fileDataOnePlayer = new FileReader("StatisticsOnePlayer.txt");
         Scanner scannerReader = new Scanner(fileDataOnePlayer);
         int x;
         for (x = 0; x < arrayFileDataOnePlayer.length; x++) {

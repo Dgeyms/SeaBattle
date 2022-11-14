@@ -1,13 +1,13 @@
 package PlayerTwo;
-import General.NamePlayers;
+import General.DataPlayers;
 
 import java.util.Scanner;
 
-public class NamePlayersTwo extends NamePlayers {
+public class NamePlayersTwo extends DataPlayers {
     // name Two player
         Scanner scan = new Scanner(System.in);
         public String stringEnterName(){
-            String stEnterName = "Player Two enter name:";
+            String stEnterName = "Player Two enter name: ";
             return stEnterName;
         }
 
