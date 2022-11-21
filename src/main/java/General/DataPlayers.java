@@ -1,5 +1,7 @@
 package General;
-
+/*
+* Players enter their data
+ */
 import java.util.Scanner;
 
 public class DataPlayers {

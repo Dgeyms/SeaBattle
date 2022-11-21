@@ -17,19 +17,19 @@ public class EnterDataPlayerTwo {
            DataPlayers dataPlayers = new DataPlayers();
            String name_playerTwo = dataPlayers.getNamePlayer(); // get name Two player
 
-           pw.printf("Player One enter age: ");
+           pw.printf("Player Two enter age: ");
            Byte age_playerTwo = dataPlayers.getAge();
 
-           pw.printf("Player One enter counter: ");
+           pw.printf("Player Two enter counter: ");
            String counter_playerTwo = dataPlayers.getCounter();
 
-           pw.printf("Player One enter city: ");
+           pw.printf("Player Two enter city: ");
            String city_playerTwo = dataPlayers.getCity();
 
-           pw.printf("Player One enter telephone: ");
+           pw.printf("Player Two enter telephone: ");
            String telephone_playerTwo = dataPlayers.getTelephone();
 
-           pw.printf("Player One enter email: ");
+           pw.printf("Player Two enter email: ");
            String email_playerTwo = dataPlayers.getEmail();
 
            pw.println("-----------------------------");

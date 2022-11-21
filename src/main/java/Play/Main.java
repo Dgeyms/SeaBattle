@@ -1,22 +1,14 @@
 // start game
 package Play;
 
-import General.DataPlayers;
 import General.PlacementShips;
 import PlayerOne.EnterDataPlayerOne;
-import PlayerOne.FileData.FileWriterStatisticsOnePlayer;
 import PlayerTwo.EnterDataPlayerTwo;
-import PlayerTwo.FileWriterTwoPlayer;
-import PlayerTwo.NamePlayersTwo;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
 public class Main {
-    private final int FILED_LENGTH = 10; // length and width of the playing field
-    public int getFILED_LENGTH() {
-        return FILED_LENGTH;
-    }
 
     public static void main(String[] args) throws IOException {
 

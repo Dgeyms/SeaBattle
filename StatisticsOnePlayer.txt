@@ -1,9 +1,9 @@
    STATISTICS PLAYER ONE
 ----------------------------
-Name player: hjk
-Age player: 5
-Age counter: ghj
-City life player: nbm
-Telephone player: gj
-Email player: ghj
+Name player: xgb
+Age player: 96
+Age counter: fdh
+City life player: try
+Telephone player: sg
+Email player: fgh
 ----------------------------
