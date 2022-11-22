@@ -1,10 +1,9 @@
 package PlayerTwo;
 
-import General.DataPlayers;
+import DataPlayers.DataPlayers;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.StringReader;
 
 public class EnterDataPlayerTwo {
 

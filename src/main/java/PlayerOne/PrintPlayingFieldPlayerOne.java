@@ -1,16 +1,23 @@
-// игровое поле игрока один (графический вид)
 package PlayerOne;
+/*
+*player one playing field (graphical view)
+ */
+
+import Coordinates.EnterCoordinate;
+import PlayerOne.LocationShipsPlayerOne.LocationShipsPlayerOne;
 
 public class PrintPlayingFieldPlayerOne {
-    // метод для распечатки игрового поле
-    public void PrintPlayingFieldPlayerOne(int[][] playerField1) {
 
-        for (int y = 0; y < playerField1.length; y++) {
-            for (int x = 0; x < playerField1.length; x++) {
-                if (playerField1[x][y] == 0) {
+
+    // method for printing the playing field
+    public void PrintPlayingFieldPlayerOne(int[][] playerOneField) {
+
+        for (int y = 0; y < playerOneField.length; y++) {
+            for (int x = 0; x < playerOneField.length; x++) {
+                if (playerOneField[x][y] == 0) {
                     System.out.print("|" + "\t");
                 } else {
-                    System.out.print(playerField1[x][y] + "\t");
+                    System.out.print(playerOneField[x][y] + "\t");
                 }
             }
             System.out.println();
