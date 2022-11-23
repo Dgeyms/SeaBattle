@@ -3,6 +3,7 @@ package Play;
 
 import Coordinates.EnterCoordinate;
 import PlayerOne.EnterDataPlayerOne;
+import PlayerOne.FileData.FileWriterStatisticsOnePlayer;
 import PlayerOne.LocationShipsPlayerOne.LocationShipsPlayerOne;
 import PlayerOne.PrintPlayingFieldPlayerOne;
 import PlayerTwo.EnterDataPlayerTwo;
@@ -37,10 +38,12 @@ public class Main {
         locationShipsPlayerOne.locationShipsPlayerOne(enterCoordinate.playersField); // placement of the first player's ships
         PrintPlayingFieldPlayerOne printPlayingFieldPlayerOne = new PrintPlayingFieldPlayerOne();
         pw.println("Arrangement of the first player's ships");
-        printPlayingFieldPlayerOne.PrintPlayingFieldPlayerOne(enterCoordinate.playersField); // print field player One
+        printPlayingFieldPlayerOne.PrintPlayingFieldPlayerOneConsole(enterCoordinate.playersField); // print field player One console
+        // Write coordinate ships player One in file
+        printPlayingFieldPlayerOne.writeCoordinateShipsPlayerOneFile(enterCoordinate.playersField); // print field player One file
 
 
-        // Я остановился тут
+        // Я остановился тут (запись игрового поля в файл)
 
     }
 }

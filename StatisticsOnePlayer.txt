@@ -1,9 +1,15 @@
    STATISTICS PLAYER ONE
 ----------------------------
-Name player: UYhj
-Age player: 5
-Age counter: sdf
-City life player: DSf
-Telephone player: 65
-Email player: SDf
+Name player: вп
+Age player: 6
+Age counter: фке
+City life player: вап
+Telephone player: 6
+Email player: фвкп
 ----------------------------
+Arrangement of ships
+|	|	|	|	|	
+|	2	|	|	1	
+|	2	|	|	|	
+|	|	|	|	|	
+2	2	|	1	|	
