@@ -1,9 +1,13 @@
    STATISTICS PLAYER TWO
 ----------------------------
-Name player: Oimfg
-Age player: 65
-Counter player: sdgf
-City life player: dfgnb
-Telephone player: 7687
-Email player: dfg
-----------------------------
+Name player: Mqts
+Age player: 6
+Counter player: sdfg
+City life player: dghrt
+Telephone player: 7673574
+Email player: dg
+----------------------------2	2	|	|	|	
+|	2	|	|	1	
+|	2	|	|	|	
+|	1	2	2	|	
+1	2	|	1	|	

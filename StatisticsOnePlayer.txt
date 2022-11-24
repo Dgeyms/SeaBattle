@@ -1,10 +1,15 @@
    STATISTICS PLAYER ONE
 ----------------------------
-Name player: Ter
-Age player: 6
-Age counter: dsf
-City life player: SDFreg
-Telephone player: 674354
-Email player: dfg
+Name player: Uoio
+Age player: 5
+Age counter: dsfg
+City life player: dfg
+Telephone player: 7867
+Email player: dg
 ----------------------------
 Arrangement of ships
+|	|	|	|	|	
+|	2	|	|	1	
+|	2	|	|	|	
+|	|	|	|	|	
+2	2	|	1	|	
