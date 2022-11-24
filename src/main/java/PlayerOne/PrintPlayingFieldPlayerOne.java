@@ -12,7 +12,7 @@ public class PrintPlayingFieldPlayerOne {
     public PrintPlayingFieldPlayerOne() throws IOException {
     }
 
-    // method for printing the playing field
+    // method for printing the playing field in console
     public void PrintPlayingFieldPlayerOneConsole(int[][] playerOneField) {
 
         for (int y = 0; y < playerOneField.length; y++) {
@@ -28,6 +28,7 @@ public class PrintPlayingFieldPlayerOne {
 
     }
 
+    // method for printing the playing field in file
     public void writeCoordinateShipsPlayerOneFile(int[][] playerOneField) throws IOException {
         for (int y = 0; y < playerOneField.length; y++) {
             for (int x = 0; x < playerOneField.length; x++) {

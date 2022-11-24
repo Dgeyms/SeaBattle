@@ -1,15 +1,10 @@
    STATISTICS PLAYER ONE
 ----------------------------
-Name player: вп
+Name player: Ter
 Age player: 6
-Age counter: фке
-City life player: вап
-Telephone player: 6
-Email player: фвкп
+Age counter: dsf
+City life player: SDFreg
+Telephone player: 674354
+Email player: dfg
 ----------------------------
 Arrangement of ships
-|	|	|	|	|	
-|	2	|	|	1	
-|	2	|	|	|	
-|	|	|	|	|	
-2	2	|	1	|	

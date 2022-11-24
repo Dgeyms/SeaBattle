@@ -42,8 +42,8 @@ public class Main {
         // Write coordinate ships player One in file
         printPlayingFieldPlayerOne.writeCoordinateShipsPlayerOneFile(enterCoordinate.playersField); // print field player One file
 
-
-        // Я остановился тут (запись игрового поля в файл)
+        // Player Two enter сoordinates
+        // Я остановился тут (enter coordinat end запись статистики  в файл второго игрока)
 
     }
 }
