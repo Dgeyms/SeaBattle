@@ -6,8 +6,7 @@ import PlayerOne.EnterDataPlayerOne;
 import PlayerOne.LocationShipsPlayerOne.LocationShipsPlayerOne;
 import PlayerOne.Print.PrintPlayingFieldPlayerOne;
 import PlayerTwo.EnterDataPlayerTwo;
-import PlayerTwo.LocationShipsPlayerTwo.LocationShipsPlayerTwo;
-import PlayerTwo.Print.PrintPlayingFieldPlayerTwo;
+import PlayerTwo.LocationShipsPlayerTwo.EnterCoordinatePlayerTwo;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -22,7 +21,7 @@ public class Main {
 
         // Two player enter name end writer in files
         EnterDataPlayerTwo enterDataPlayerTwo = new EnterDataPlayerTwo();
-        enterDataPlayerTwo.enterDataPlayerOne();
+        enterDataPlayerTwo.enterDataPlayerTwo();
 
         // Game start!
         PrintWriter pw = new PrintWriter(System.out, true);
@@ -45,16 +44,11 @@ public class Main {
         printPlayingFieldPlayerOne.writeCoordinateShipsPlayerOneFile(enterCoordinate.playersField); // print field player One file
 
         // Player Two enter сoordinates
-        pw.println("===================================");
-        pw.println("Player Two let's arrange the ships");
-        LocationShipsPlayerTwo locationShipsPlayerTwo = new LocationShipsPlayerTwo();
-        locationShipsPlayerTwo.locationShipsPlayerTwo(enterCoordinate.playersField); // placement of the Two player's ships
-        pw.println("Arrangement of the Two player's ships");
+        EnterCoordinatePlayerTwo enterCoordinatePlayerTwo = new EnterCoordinatePlayerTwo();
+        enterCoordinatePlayerTwo.enterCoordinatePlayerTwo(); // placement of the Two player's ships
 
-        PrintPlayingFieldPlayerTwo printPlayingFieldPlayerTwo = new PrintPlayingFieldPlayerTwo();
-        printPlayingFieldPlayerTwo.PrintPlayingFieldPlayerTwoConsole(enterCoordinate.playersField); // print field player Two console
-        // Write coordinate ships player Two in file
-        printPlayingFieldPlayerTwo.writeCoordinateShipsPlayerTwoFile(enterCoordinate.playersField); // print field player Two file
+
+
 
     }
 }

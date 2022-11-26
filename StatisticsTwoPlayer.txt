@@ -1,13 +1,1 @@
-   STATISTICS PLAYER TWO
-----------------------------
-Name player: Mqts
-Age player: 6
-Counter player: sdfg
-City life player: dghrt
-Telephone player: 7673574
-Email player: dg
-----------------------------2	2	|	|	|	
-|	2	|	|	1	
-|	2	|	|	|	
-|	1	2	2	|	
-1	2	|	1	|	
+
