@@ -1,10 +1,9 @@
 // start game
 package Play;
 
-import Coordinates.EnterCoordinate;
 import PlayerOne.EnterDataPlayerOne;
-import PlayerOne.LocationShipsPlayerOne.LocationShipsPlayerOne;
-import PlayerOne.Print.PrintPlayingFieldPlayerOne;
+import PlayerOne.LocationShipsPlayerOne.EnterCoordinatePlayerOne;
+import PlayerOne.Print.PrintConsoleFieldPlayerOne;
 import PlayerTwo.EnterDataPlayerTwo;
 import PlayerTwo.LocationShipsPlayerTwo.EnterCoordinatePlayerTwo;
 
@@ -33,22 +32,11 @@ public class Main {
 
         // Player One enter сoordinates
         pw.println("Player One let's arrange the ships");
-        LocationShipsPlayerOne locationShipsPlayerOne = new LocationShipsPlayerOne();
-        EnterCoordinate enterCoordinate = new EnterCoordinate();
-
-        locationShipsPlayerOne.locationShipsPlayerOne(enterCoordinate.playersField); // placement of the first player's ships
-        PrintPlayingFieldPlayerOne printPlayingFieldPlayerOne = new PrintPlayingFieldPlayerOne();
-        pw.println("Arrangement of the first player's ships");
-        printPlayingFieldPlayerOne.PrintPlayingFieldPlayerOneConsole(enterCoordinate.playersField); // print field player One console
-        // Write coordinate ships player One in file
-        printPlayingFieldPlayerOne.writeCoordinateShipsPlayerOneFile(enterCoordinate.playersField); // print field player One file
+        EnterCoordinatePlayerOne locationShipsPlayerOne = new EnterCoordinatePlayerOne();
+        locationShipsPlayerOne.locationShipsPlayerOne();
 
         // Player Two enter сoordinates
         EnterCoordinatePlayerTwo enterCoordinatePlayerTwo = new EnterCoordinatePlayerTwo();
         enterCoordinatePlayerTwo.enterCoordinatePlayerTwo(); // placement of the Two player's ships
-
-
-
-
     }
 }
