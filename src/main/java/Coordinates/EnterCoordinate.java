@@ -11,6 +11,7 @@ public class EnterCoordinate {
     Scanner scan = new Scanner(System.in);
     PlayingField playingField = new PlayingField();
     public int[][] playersField = new int[playingField.getFILED_LENGTH()][playingField.getFILED_LENGTH()];
+
     // method for setting up a 4 deck ship (disabled)
     /*public int[][] installation_4_Deck(int[][] playerField) {
         for (int i = 1; i <= 4; i++) {
@@ -26,7 +27,7 @@ public class EnterCoordinate {
     // method for installing a 3 deck ship (disabled)
     /*public int[][] installation_3_Deck(int[][] playerField) {
         for (int z = 0; z <= 1; z++) {
-            for (int i = 1; i <= 3; i++) { // вводим координаты
+            for (int i = 1; i <= 3; i++) { // Enter coordinate
                 System.out.println("Enter coordinate X" + i);
                 int x = scan.nextInt();
                 System.out.println("Enter coordinate Y" + i);
@@ -34,7 +35,7 @@ public class EnterCoordinate {
                 playerField[x][y] = 3;
             }
             if (z == 0) {
-                System.out.println("Устанавливаем 2-ой 3-х палубный корабль");
+                System.out.println("Installing the 2nd 3-deck ship");
             } else {
                 System.out.println("----------------------------");
             }
@@ -53,7 +54,7 @@ public class EnterCoordinate {
                 playerField[x][y] = 2;
             }
             if (z < 1) {
-                System.out.println("Устанавливаем 2-ой 2-х палубный корабль");
+                System.out.println("Installing the second 2-deck ship");
                 System.out.println("----------------------------");
             } else {
                 System.out.println("----------------------------");
@@ -73,7 +74,7 @@ public class EnterCoordinate {
             int y = scan.nextInt();
             playerField[x][y] = 1;
             if (z < 1) {
-                System.out.println("Устанавливаем еще раз 1-х палубный коробль");
+                System.out.println("Installing a single-deck ship again");
                 System.out.println("----------------------------");
             } else {
                 System.out.println("----------------------------");
