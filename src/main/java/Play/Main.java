@@ -3,7 +3,6 @@ package Play;
 
 import PlayerOne.EnterDataPlayerOne;
 import PlayerOne.LocationShipsPlayerOne.EnterCoordinatePlayerOne;
-import PlayerOne.Print.PrintConsoleFieldPlayerOne;
 import PlayerTwo.EnterDataPlayerTwo;
 import PlayerTwo.LocationShipsPlayerTwo.EnterCoordinatePlayerTwo;
 
