@@ -1,6 +1,6 @@
 package PlayerOne;
 
-import DataPlayers.DataPlayers;
+import DataPlayers;
 import PlayerOne.Print.PrintStatisticsFileOnePlayer;
 
 import java.io.IOException;

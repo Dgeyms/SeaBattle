@@ -3,8 +3,8 @@ package PlayerTwo.LocationShipsPlayerTwo;
 * Get coordinate ships player One
  */
 import Coordinates.EnterCoordinate;
-import PlayerTwo.Print.PrintConsoleFieldPlayerTwo;
-import PlayerTwo.Print.PrintStatisticsFilePlayerTwo;
+import PlayerTwo.print.PrintConsoleFieldPlayerTwo;
+import PlayerTwo.print.PrintStatisticsFilePlayerTwo;
 import playingField.PlayingField;
 
 import java.io.IOException;

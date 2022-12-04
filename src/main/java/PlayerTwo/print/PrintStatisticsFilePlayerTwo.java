@@ -1,11 +1,10 @@
-package PlayerTwo.Print;
+package PlayerTwo.print;
 /*
  * Write statistics player Two in file "StatisticsTwoPlayer.txt"
  */
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.StandardOpenOption;
 
 
 public class PrintStatisticsFilePlayerTwo {

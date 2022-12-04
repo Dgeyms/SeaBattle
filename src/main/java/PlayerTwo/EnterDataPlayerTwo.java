@@ -3,8 +3,8 @@ package PlayerTwo;
  * Get data second player end write data in file
  */
 
-import DataPlayers.DataPlayers;
-import PlayerTwo.Print.PrintStatisticsFilePlayerTwo;
+import DataPlayers;
+import PlayerTwo.print.PrintStatisticsFilePlayerTwo;
 
 import java.io.IOException;
 import java.io.PrintWriter;

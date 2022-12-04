@@ -6,8 +6,6 @@ package PlayerOne.LocationShipsPlayerOne;
 import Coordinates.EnterCoordinate;
 import PlayerOne.Print.PrintConsoleFieldPlayerOne;
 import PlayerOne.Print.PrintStatisticsFileOnePlayer;
-import PlayerTwo.Print.PrintConsoleFieldPlayerTwo;
-import PlayerTwo.Print.PrintStatisticsFilePlayerTwo;
 import playingField.PlayingField;
 
 import java.io.IOException;

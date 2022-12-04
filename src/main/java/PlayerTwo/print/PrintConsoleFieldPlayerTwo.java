@@ -1,4 +1,4 @@
-package PlayerTwo.Print;
+package PlayerTwo.print;
 /*
  *  printing the playing field second player in console
  */
