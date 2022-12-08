@@ -1,10 +1,9 @@
 // start game
-package Play;
 
-import PlayerOne.EnterDataPlayerOne;
-import PlayerOne.LocationShipsPlayerOne.EnterCoordinatePlayerOne;
-import PlayerTwo.EnterDataPlayerTwo;
-import PlayerTwo.LocationShipsPlayerTwo.EnterCoordinatePlayerTwo;
+//import playerone.EnterDataPlayerOne;
+//import playerone.LocationShipsPlayerOne.EnterCoordinatePlayerOne;
+//import playertwo.EnterDataPlayerTwo;
+//import playertwo.LocationShipsPlayerTwo.EnterCoordinatePlayerTwo;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,8 +11,20 @@ import java.io.PrintWriter;
 public class Main {
 
     public static void main(String[] args) throws IOException {
+        // Игрок один вводит свои данные
+        System.out.println("The user can enter his data");
+        ReaderDataPlayer readerDataPlayerOne = new ReaderDataPlayer(System.in);
+        DataPlayer readOne = readerDataPlayerOne.read();
+        System.out.println("Player data one: " + readOne);
 
-        // One player, enter name end writer in files end Database
+        // Игрок два вводит свои данные
+        System.out.println("The user second enter his data");
+        ReaderDataPlayer readerDataPlayerTwo = new ReaderDataPlayer(System.in);
+        DataPlayer readTwo = readerDataPlayerTwo.read();
+        System.out.println("Player data two: " + readTwo);
+
+
+        /*// One player, enter name end writer in files end Database
         EnterDataPlayerOne enterDataPlayerOne = new EnterDataPlayerOne();
         enterDataPlayerOne.enterDataPlayerOne();
 
@@ -36,6 +47,6 @@ public class Main {
 
         // Player Two enter сoordinates
         EnterCoordinatePlayerTwo enterCoordinatePlayerTwo = new EnterCoordinatePlayerTwo();
-        enterCoordinatePlayerTwo.enterCoordinatePlayerTwo(); // placement of the Two player's ships
+        enterCoordinatePlayerTwo.enterCoordinatePlayerTwo(); // placement of the Two player's ships*/
     }
 }
