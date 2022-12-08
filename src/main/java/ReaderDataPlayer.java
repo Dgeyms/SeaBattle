@@ -11,17 +11,17 @@ import java.io.InputStream;
 
     @Override
     public DataPlayer read() {
-        System.out.println("Enter name: ");
+        //System.out.println("Enter name: ");
         String namePlayer = scanner.next();
-        System.out.println("Enter age: ");
+        //System.out.println("Enter age: ");
         int age = scanner.nextInt();
-        System.out.println("Enter city: ");
+        //System.out.println("Enter city: ");
         String city = scanner.next();
-        System.out.println("Enter country: ");
+        //System.out.println("Enter country: ");
         String country = scanner.next();
-        System.out.println("Enter phone: ");
+        //System.out.println("Enter phone: ");
         String telephone = scanner.next();
-        System.out.println("Enter Email: ");
+        //System.out.println("Enter Email: ");
         String email = scanner.next();
 
         return new DataPlayer(namePlayer, age, city, country, telephone, email);

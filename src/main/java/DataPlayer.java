@@ -1,6 +1,6 @@
 
 /*
-* Data player
+* Хранение данных игрока
  */
 
 public class DataPlayer{

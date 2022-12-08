@@ -5,23 +5,27 @@
 //import playertwo.EnterDataPlayerTwo;
 //import playertwo.LocationShipsPlayerTwo.EnterCoordinatePlayerTwo;
 
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws FileNotFoundException {
         // Игрок один вводит свои данные
         System.out.println("The user can enter his data");
-        ReaderDataPlayer readerDataPlayerOne = new ReaderDataPlayer(System.in);
+        ReaderDataPlayer readerDataPlayerOne = new ReaderDataPlayer(new FileInputStream("PlayerOne.txt"));
         DataPlayer readOne = readerDataPlayerOne.read();
         System.out.println("Player data one: " + readOne);
+        System.out.println("----------------------------------");
 
         // Игрок два вводит свои данные
         System.out.println("The user second enter his data");
-        ReaderDataPlayer readerDataPlayerTwo = new ReaderDataPlayer(System.in);
+        ReaderDataPlayer readerDataPlayerTwo = new ReaderDataPlayer(new FileInputStream("PlayerTwo.txt"));
         DataPlayer readTwo = readerDataPlayerTwo.read();
         System.out.println("Player data two: " + readTwo);
+
+        System.out.println("----------------------------------");
+
 
 
         /*// One player, enter name end writer in files end Database

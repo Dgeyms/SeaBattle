@@ -80,3 +80,4 @@ fabric.properties
 StatisticsTwoPlayer.txt
 StatisticsOnePlayer.txt
 StatisticsGameProgress.txt
+/PlayerOne.txt
